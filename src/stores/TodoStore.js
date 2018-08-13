@@ -1,8 +1,9 @@
 import { observable, action } from 'mobx';
 
 export default class TodoStore {
-  newTodo = '';
+  @observable newTodo = '';
 
+  @action
   changeNewTodo = (newTodo) => {
     this.newTodo = newTodo;
   };

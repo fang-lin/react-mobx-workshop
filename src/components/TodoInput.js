@@ -20,6 +20,9 @@ const Input = styled.input`
   }
 `;
 
+@inject('todo')
+@observer
+
 class TodoInput extends Component {
   render() {
     const { newTodo, changeNewTodo } = this.props.todo;
