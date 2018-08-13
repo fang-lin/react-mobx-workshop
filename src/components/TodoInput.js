@@ -25,13 +25,13 @@ const Input = styled.input`
 
 class TodoInput extends Component {
   render() {
-    const { newTodo, changeNewTodo } = this.props.todo;
+    const { title, changeTitle } = this.props.todo;
     return (
       <Wrapper className="todo-input-wrapper">
         <Input type="text"
                placeholder="What needs to be done?"
-               value={ newTodo }
-               onChange={ event => changeNewTodo(event.target.value) }/>
+               value={ title }
+               onChange={ event => changeTitle(event.target.value) }/>
       </Wrapper>
     );
   }
