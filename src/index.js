@@ -4,11 +4,11 @@ import ReactDOM from 'react-dom';
 import { Provider } from 'mobx-react';
 import './index.css';
 import TodoApp from './components/TodoApp';
-import TodoStore from './stores/TodoStore';
+import TodosStore from './stores/TodosStore';
 
-const todo = new TodoStore();
+const todos = new TodosStore();
 ReactDOM.render(
-  <Provider { ...{ todo } }>
+  <Provider { ...{ todos } }>
     <TodoApp/>
   </Provider>,
   document.getElementById('root')

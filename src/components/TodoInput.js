@@ -20,15 +20,28 @@ const Input = styled.input`
   }
 `;
 
+const ENTER_KEY = 13;
+
+@inject('todos')
+@observer
+
 class TodoInput extends Component {
+
+  onKeyUp = event => {
+    if (event.keyCode === ENTER_KEY) {
+      this.props.todos.addTodo(event.target.value);
+      event.target.value = '';
+    }
+  };
+
   render() {
-    const { title, changeTitle } = this.props.todo;
+
     return (
       <Wrapper className="todo-input-wrapper">
         <Input type="text"
                placeholder="What needs to be done?"
-               value={ title }
-               onChange={ event => changeTitle(event.target.value) }/>
+               onKeyUp={ this.onKeyUp }
+        />
       </Wrapper>
     );
   }

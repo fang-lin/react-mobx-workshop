@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 import TodoInput from './TodoInput';
+import TodosList from './TodosList';
 
 const App = styled.div`
   width: 480px;
@@ -24,6 +25,7 @@ class TodoApp extends Component {
           <Title className="app-title">todos</Title>
           <TodoInput/>
         </header>
+        <TodosList/>
       </App>
     );
   }
