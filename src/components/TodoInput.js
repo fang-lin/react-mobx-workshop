@@ -2,8 +2,6 @@ import React, { Component } from 'react';
 import styled from 'styled-components';
 import { inject, observer } from "mobx-react/index";
 
-const Wrapper = styled.div``;
-
 const Input = styled.input`
   display: block;
   font-size: 32px;
@@ -11,8 +9,8 @@ const Input = styled.input`
   box-sizing: border-box;
   padding: 20px 40px 20px 74px;
   border: solid 1px #b4bac1;
-  color: #333f48;
   border-radius: 4px;
+  color: #333f48;
   width: 100%;
   outline: none;
   transition: all .3s;
@@ -37,12 +35,12 @@ class TodoInput extends Component {
 
   render() {
     return (
-      <Wrapper className="todo-input-wrapper">
+      <div className="todo-input-wrapper">
         <Input type="text"
                placeholder="What needs to be done?"
                onKeyUp={ this.onKeyUp }
         />
-      </Wrapper>
+      </div>
     );
   }
 }

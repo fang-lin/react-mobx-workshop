@@ -19,7 +19,7 @@ class TodoFooter extends Component {
     const { completedCount, totalCount } = this.props.todos;
     return (
       <Footer className="todo-footer">
-        <span>Completed: { completedCount }</span> / <span>Total: { totalCount }</span>
+        <span>Total: { totalCount }</span> / <span>Completed: { completedCount }</span>
       </Footer>
     );
   }

@@ -4,7 +4,6 @@ import { inject, observer } from "mobx-react";
 import TodoItem from "./TodoItem";
 
 const TodoItems = styled.ul`
-  font-size: 32px;
   font-weight: lighter;
   box-sizing: border-box;
   margin: 20px 0;
@@ -23,8 +22,8 @@ class TodosList extends Component {
     return (
       todos.length > 0 ? <TodoItems>
         { todos.map(todo => {
-          const { toggleState, destroy } = todo;
-          return <TodoItem key={ todo.id }  { ...todo } { ...{ toggleState, destroy } }/>;
+          const { toggleState, destroy, changeTitle } = todo;
+          return <TodoItem key={ todo.id }  { ...todo } { ...{ toggleState, destroy, changeTitle } }/>;
         }) }
       </TodoItems> : null
     );

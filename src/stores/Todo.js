@@ -13,7 +13,7 @@ export default class TodoStore {
 
   @action
   destroy = () => {
-    this.todosStore.removeTodo(this);
+    this.todosStore.todos.remove(this);
   };
 
   @action
