@@ -4,7 +4,7 @@ MobX: Simple, scalable state management
 
 ## Getting started
 
-- [Step 0: Start](doc/STEP_0.md)
+- [Step 0: Getting started](doc/STEP_0.md)
 - [Step 1: Add a todo](doc/STEP_1.md)
 - [Step 2: Remove a todo](doc/STEP_2.md)
 - [Step 3: Editor and refactor](doc/STEP_3.md)
