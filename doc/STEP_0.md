@@ -1,6 +1,6 @@
-## Step 0: Getting started
+# Step 0: Getting started
 
-# What is MobX?
+## What is MobX?
 
 
 

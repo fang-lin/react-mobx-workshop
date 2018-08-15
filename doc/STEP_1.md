@@ -1,13 +1,13 @@
-## Step 1: Add a new todo
+# Step 1: Add a new todo
 
-# Requirements
+## Requirements
 
 1. User can input some words
 2. When user presses "Enter", should put the new input into todo list
 3. Do not accept blank content
 
 
-# You should know
+## You should know
 
 1. Create a store `Todos`
 2. `@observable`
@@ -15,7 +15,7 @@
 4. `@inject` and `@observer`
 
 
-# Stores
+## Stores
 
 ```
 ┌─────────────────────────┐

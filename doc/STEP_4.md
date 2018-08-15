@@ -1,17 +1,17 @@
-## Step 4: Is completed
+# Step 4: Is completed
 
-# Requirements
+## Requirements
 
 1. User can change the state of existing todo
 
 
-# You should know
+## You should know
 
 1. Add `completed` field
 2. `toggleState()`
 
 
-# Stores
+## Stores
 
 ```
 ┌─────────────────────────┐         ┌─────────────────────────┐

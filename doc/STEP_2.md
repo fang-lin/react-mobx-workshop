@@ -1,17 +1,18 @@
-## Step 2: Remove a todo
+# Step 2: Remove a todo
 
-# Requirements
+## Requirements
 
 1. User can remove existing todo
 2. When user click the cross icon, should remove the todo from the list
 
 
-# You should know
+## You should know
 
 1. `removeTodo()`
 2. `@action`
 
-# Stores
+
+## Stores
 
 ```
 ┌─────────────────────────┐

@@ -1,17 +1,17 @@
-## Step 5: Get count
+# Step 5: Get count
 
-# Requirements
+## Requirements
 
 1. Show the count of total todo and the count of completed todo
 
 
-# You should know
+## You should know
 
 1. `@computed`
 2. `get totalCount()` and `get completedCount()`
 
 
-# Stores
+## Stores
 
 ```
 ┌─────────────────────────┐
