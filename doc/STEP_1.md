@@ -7,7 +7,7 @@
 3. Do not accept blank content
 
 
-## You should know
+## Prompts
 
 1. Create a store `Todos`
 2. `@observable`

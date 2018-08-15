@@ -6,7 +6,7 @@
 2. When user click the cross icon, should remove the todo from the list
 
 
-## You should know
+## Prompts
 
 1. `removeTodo()`
 2. `@action`

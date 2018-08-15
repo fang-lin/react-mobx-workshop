@@ -5,7 +5,7 @@
 1. User can change the state of existing todo
 
 
-## You should know
+## Prompts
 
 1. Add `completed` field
 2. `toggleState()`

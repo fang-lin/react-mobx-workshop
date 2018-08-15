@@ -7,7 +7,7 @@
 3. When the edit input on blur or presses "Enter", should save the change
 
 
-## You should know
+## Prompts
 
 1. Refactor your stores
 2. Create a store `Todo`
