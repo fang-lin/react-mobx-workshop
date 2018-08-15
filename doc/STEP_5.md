@@ -1,4 +1,4 @@
-# Step 5: Get count
+# Step 5: Get counts
 
 ## Requirements
 
