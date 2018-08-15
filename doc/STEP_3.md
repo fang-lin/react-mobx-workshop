@@ -3,8 +3,8 @@
 ## Requirements
 
 1. User can edit existing todo
-2. When user double click a todo, should show edit input for this todo item
-3. When the edit input on blur or presses "Enter", should save the change
+2. When user double click a todo, should show edit mode for this item
+3. When the edit input on blur or presses key "Enter", should save the change
 
 
 ## Prompts

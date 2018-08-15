@@ -3,7 +3,7 @@
 ## Requirements
 
 1. User can input some words
-2. When user presses "Enter", should put the new input into todo list
+2. When user presses key "Enter", should put the new input into todo list
 3. Do not accept blank content
 
 
