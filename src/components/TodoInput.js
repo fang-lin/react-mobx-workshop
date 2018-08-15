@@ -9,14 +9,15 @@ const Input = styled.input`
   font-size: 32px;
   font-weight: lighter;
   box-sizing: border-box;
-  padding: 20px 40px;
+  padding: 20px 40px 20px 74px;
   border: solid 1px #b4bac1;
   color: #333f48;
   border-radius: 4px;
   width: 100%;
   outline: none;
+  transition: all .3s;
   &:focus{
-    box-shadow: 0 2px 10px 0px rgba(0,0,0,.3)
+    box-shadow: 0 2px 10px 0px rgba(0, 0, 0, .1);
   }
 `;
 
@@ -35,7 +36,6 @@ class TodoInput extends Component {
   };
 
   render() {
-
     return (
       <Wrapper className="todo-input-wrapper">
         <Input type="text"

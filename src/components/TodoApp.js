@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import styled from 'styled-components';
 import TodoInput from './TodoInput';
 import TodosList from './TodosList';
+import TodoFooter from './TodoFooter';
 
 const App = styled.div`
   width: 480px;
@@ -14,6 +15,7 @@ const Title = styled.h1`
   font-weight: lighter;
   text-align: center;
   color: #E4002B;
+  margin: 20px 0;
   opacity: .7;
 `;
 
@@ -26,6 +28,7 @@ class TodoApp extends Component {
           <TodoInput/>
         </header>
         <TodosList/>
+        <TodoFooter/>
       </App>
     );
   }
