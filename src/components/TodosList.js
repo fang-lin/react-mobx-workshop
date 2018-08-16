@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
-import { inject, observer } from "mobx-react";
 import TodoItem from "./TodoItem";
 
 const TodoItems = styled.ul`
@@ -13,17 +12,14 @@ const TodoItems = styled.ul`
   border-radius: 4px;
 `;
 
-@inject('todos')
-@observer
 
 class TodosList extends Component {
   render() {
-    const { todos } = this.props.todos;
+    const todos = ['Eat five burgers', 'Running five kilometers'];
     return (
       todos.length > 0 ? <TodoItems>
-        { todos.map(todo => {
-          const { toggleState, destroy, changeTitle } = todo;
-          return <TodoItem key={ todo.id }  { ...todo } { ...{ toggleState, destroy, changeTitle } }/>;
+        { todos.map((title, index) => {
+          return <TodoItem key={ index } title={ title }/>;
         }) }
       </TodoItems> : null
     );
