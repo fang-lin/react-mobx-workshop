@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
-import { inject, observer } from "mobx-react/index";
+import { inject, observer } from 'mobx-react/index';
+import { ENTER_KEY } from '../utils';
 
 const Input = styled.input`
   display: block;
@@ -18,8 +19,6 @@ const Input = styled.input`
     box-shadow: 0 2px 10px 0px rgba(0, 0, 0, .1);
   }
 `;
-
-const ENTER_KEY = 13;
 
 @inject('todos')
 @observer

@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import { findDOMNode } from 'react-dom';
-import { trim } from 'lodash';
 import styled from 'styled-components';
+import { trim } from 'lodash';
+import { ENTER_KEY } from '../utils';
 
 const CompletedIcon = styled.span`
   display: block;
@@ -76,8 +77,6 @@ const Input = styled.input`
   outline: none;
   box-shadow: inset 0 2px 10px 0px rgba(0, 0, 0, .1);
 `;
-
-const ENTER_KEY = 13;
 
 export default class TodoItem extends Component {
   constructor(props) {
