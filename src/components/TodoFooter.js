@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
-import { inject, observer } from "mobx-react";
 
 const Footer = styled.footer`
   border-top: solid 1px #b4bac1;
