@@ -3,10 +3,7 @@ import Todo from './Todo';
 import { uuid } from '../utils';
 
 export default class Todos {
-  @observable todos = [
-    new Todo('AAA', uuid(), false, this),
-    new Todo('BBB', uuid(), false, this)
-  ];
+  @observable todos = [];
 
   @action addTodo = (title) => {
     this.todos.push(new Todo(title, uuid(), false, this));

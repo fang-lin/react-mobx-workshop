@@ -11,18 +11,15 @@ export default class TodoStore {
     this.todosStore = todosStore;
   }
 
-  @action
-  destroy = () => {
+  @action destroy = () => {
     this.todosStore.todos.remove(this);
   };
 
-  @action
-  changeTitle = (title) => {
+  @action changeTitle = (title) => {
     this.title = title;
   };
 
-  @action
-  toggleState = () => {
+  @action toggleState = () => {
     this.completed = !this.completed;
   };
 }
