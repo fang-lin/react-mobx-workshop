@@ -15,3 +15,5 @@ export function uuid() {
 
   return uuid;
 }
+
+export const ENTER_KEY = 13;

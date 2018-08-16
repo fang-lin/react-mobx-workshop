@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { findDOMNode } from 'react-dom';
 import styled from 'styled-components';
 
 const CompletedIcon = styled.span`
@@ -58,14 +59,53 @@ const Title = styled.span`
   font-size: 32px;
 `;
 
+
+const Input = styled.input`
+  font-size: 32px;
+  flex-grow: 1;
+  width: 100px;
+  font-size: 32px;
+  font-weight: lighter;
+  border: solid 1px #b4bac1;
+  border-radius: 4px;
+  box-sizing: border-box;
+  padding: 10px;
+  margin: -20px 10px;
+  color: #333f48;
+  outline: none;
+  box-shadow: inset 0 2px 10px 0px rgba(0, 0, 0, .1);
+`;
+
 export default class TodoItem extends Component {
+  constructor(props) {
+    super(props);
+    this.state = { editor: false };
+  }
+
+  onDoubleClickTitle = () => {
+    this.setState({ editor: true }, () => {
+      findDOMNode(this.refs.editor).focus();
+    });
+  };
+
+  onKeyUp = event => {
+    // TODO
+  };
+
+  onBlurInput = event => {
+    // TODO
+  };
 
   render() {
-    const { title, destroy } = this.props;
+    const { id, title, toggleState, completed, destroy } = this.props;
     return (
-      <Item>
-        <CompletedIcon/>
-        <Title>{ title }</Title>
+      <Item key={ id }>
+        <CompletedIcon completed={ completed } onClick={ toggleState }/>
+        {
+          this.state.editor ?
+            <Input ref="editor" defaultValue={ title } onBlur={ this.onBlurInput } onKeyUp={ this.onKeyUp }/> :
+            <Title onDoubleClick={ this.onDoubleClickTitle }>{ title }</Title>
+        }
         <RemoveIcon onClick={ destroy }/>
       </Item>
     );
