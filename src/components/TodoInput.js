@@ -38,8 +38,7 @@ class TodoInput extends Component {
       <div className="todo-input-wrapper">
         <Input type="text"
                placeholder="What needs to be done?"
-               onKeyUp={ this.onKeyUp }
-        />
+               onKeyUp={ this.onKeyUp }/>
       </div>
     );
   }
