@@ -22,8 +22,8 @@ class TodosList extends Component {
     return (
       todos.length > 0 ? <TodoItems>
         { todos.map(todo => {
-          const { toggleState, destroy, changeTitle } = todo;
-          return <TodoItem key={ todo.id }  { ...todo } { ...{ toggleState, destroy, changeTitle } }/>;
+          const { id, title, destroy } = todo;
+          return <TodoItem key={ id }  { ...{ title, destroy } }/>;
         }) }
       </TodoItems> : null
     );
