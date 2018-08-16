@@ -18,8 +18,6 @@ const Input = styled.input`
   }
 `;
 
-const ENTER_KEY = 13;
-
 class TodoInput extends Component {
 
   render() {

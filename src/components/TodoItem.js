@@ -1,6 +1,4 @@
 import React, { Component } from 'react';
-import { findDOMNode } from 'react-dom';
-import { trim } from 'lodash';
 import styled from 'styled-components';
 
 const CompletedIcon = styled.span`
