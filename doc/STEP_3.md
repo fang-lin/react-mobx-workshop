@@ -20,11 +20,11 @@
 │          Todos          │         │          Todo           │
 ├─────────────────────────┤         ├─────────────────────────┤
 │ todos: Array            │         │ id: String              │
-├─────────────────────────┤         │ title: Array            │
+├─────────────────────────┤         │ title: String           │
 │ addTodo()               │         ├─────────────────────────┤
 │                         │         │ destroy()               │
 └─────────────────────────┘         └─────────────────────────┘
 ```
 
 
-[Next step: Is completed](STEP_4.md)
+## [Next Step: Editor and Is completed](STEP_4.md)

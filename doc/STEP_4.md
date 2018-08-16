@@ -22,7 +22,7 @@
 │          Todos          │         │          Todo           │
 ├─────────────────────────┤         ├─────────────────────────┤
 │ todos: Array            │         │ id: String              │
-├─────────────────────────┤         │ title: Array            │
+├─────────────────────────┤         │ title: String           │
 │ addTodo()               │         │ completed: Boolean      │
 │                         │         ├─────────────────────────┤
 │                         │         │ destroy()               │
@@ -32,4 +32,4 @@
 ```
 
 
-[Next step: Get count](STEP_5.md)
+## [Next Step: Get count](STEP_5.md)

@@ -10,9 +10,9 @@
 ## Prompts
 
 1. Create a store `Todos`
-2. `@observable`
-3. `<Provider/>`,
-4. `@inject` and `@observer`
+2. Use `@observable` and `@action` of "mobx"
+3. Use "mobx-react" `<Provider/>` to provide store to `App`,
+4. Use "mobx-react" `@inject` and `@observer`
 
 
 ## Stores
@@ -27,4 +27,4 @@
 └─────────────────────────┘
 ```
 
-[Next step: Remove a todo](STEP_2.md)
+## [Next Step: Remove a todo](STEP_2.md)

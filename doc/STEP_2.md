@@ -10,6 +10,7 @@
 
 1. `removeTodo()`
 2. `@action`
+3. `Array.remove`
 
 
 ## Stores
@@ -25,4 +26,4 @@
 └─────────────────────────┘
 ```
 
-[Next step: Editor and refactor](STEP_3.md)
+## [Next Step: Editor and refactor](STEP_3.md)
