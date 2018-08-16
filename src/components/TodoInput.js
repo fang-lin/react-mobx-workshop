@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
+import { trim } from 'lodash';
 import { inject, observer } from "mobx-react/index";
 
 const Input = styled.input`
@@ -27,8 +28,9 @@ const ENTER_KEY = 13;
 class TodoInput extends Component {
 
   onKeyUp = event => {
-    if (event.keyCode === ENTER_KEY) {
-      this.props.todos.addTodo(event.target.value);
+    const title = trim(event.target.value);
+    if (event.keyCode === ENTER_KEY && title) {
+      this.props.todos.addTodo(title);
       event.target.value = '';
     }
   };
