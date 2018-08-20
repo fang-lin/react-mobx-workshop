@@ -1,17 +1,22 @@
-import registerServiceWorker from './registerServiceWorker';
-import React from 'react';
-import ReactDOM from 'react-dom';
-import { Provider } from 'mobx-react';
-import './index.css';
-import TodoApp from './components/TodoApp';
-import Todos from './stores/Todos';
+import { observable, autorun } from 'mobx';
 
-const todos = new Todos();
+class OrderLine {
+  @observable price = 0;
+  @observable amount = 1;
 
-ReactDOM.render(
-  <Provider { ...{ todos } }>
-    <TodoApp/>
-  </Provider>,
-  document.getElementById('root')
-);
-registerServiceWorker();
+  constructor() {
+    autorun(() => {
+      console.log('this.price:', this.price);
+    });
+
+    autorun(() => {
+      console.log('this.amount:', this.amount);
+    });
+  }
+}
+
+const orderLine = new OrderLine();
+
+setInterval(() => {
+  orderLine.price++;
+}, 1000);
