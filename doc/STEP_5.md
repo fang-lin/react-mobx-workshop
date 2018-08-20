@@ -8,7 +8,12 @@
 ## Prompts
 
 1. `@computed`
-2. `get totalCount()` and `get completedCount()`
+1. `get totalCount()` and `get completedCount()`
+
+
+## References
+
+1. `@computed`: [https://mobx.js.org/refguide/computed-decorator.html](https://mobx.js.org/refguide/computed-decorator.html)
 
 
 ## Stores

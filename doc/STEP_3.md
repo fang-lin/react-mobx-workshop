@@ -7,10 +7,10 @@
 ## Prompts
 
 1. Refactor your stores
-2. Create a new store `Todo`
-3. delete `removeTodo`
-4. Add `destroy()`
-2. Use `uuid()`
+1. Create a new store `Todo`
+1. delete `removeTodo`
+1. Add `destroy()`
+1. Use `uuid()`
 
 
 ## Stores

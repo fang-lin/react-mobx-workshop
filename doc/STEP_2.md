@@ -3,14 +3,19 @@
 ## Requirements
 
 1. User can remove existing todo
-2. When user click the cross icon, should remove the todo from the list
+1. When user click the cross icon, should remove the todo from the list
 
 
 ## Prompts
 
 1. `removeTodo()`
-2. `@action`
-3. `Array.remove`
+1. `@action`
+1. `Array.remove`
+
+
+## References
+
+1. `Array.remove`: [https://mobx.js.org/refguide/array.html](https://mobx.js.org/refguide/array.html)
 
 
 ## Stores

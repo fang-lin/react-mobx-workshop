@@ -3,16 +3,21 @@
 ## Requirements
 
 1. User can change the state of existing todo
-2. User can edit existing todo
-3. When user double click a todo, should show edit mode for this item
-4. When the edit input on blur or presses key "Enter", should save the change
+1. User can edit existing todo
+1. When user double click a todo, should show edit mode for this item
+1. When the edit input on blur or presses key "Enter", should save the change
 
 
 ## Prompts
 
 1. Add `completed` field
-2. Add `changeTitle(title)`
-3. Add `toggleState()`
+1. Add `changeTitle(title)`
+1. Add `toggleState()`
+
+
+## References
+
+1. `@computed`: [https://mobx.js.org/refguide/computed-decorator.html](https://mobx.js.org/refguide/computed-decorator.html)
 
 
 ## Stores

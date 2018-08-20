@@ -10,6 +10,7 @@ MobX: Simple, scalable state management
 - [Step 3: Refactor](doc/STEP_3.md)
 - [Step 4: Editor and Is completed](doc/STEP_4.md)
 - [Step 5: Get count](doc/STEP_5.md)
+- [Step 6: Save to Local Storage](doc/STEP_6.md)
 
 ## References
 
