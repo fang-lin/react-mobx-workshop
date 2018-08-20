@@ -1,5 +1,7 @@
 # Step 5: Get counts
 
+    $ git co step-5
+
 ## Requirements
 
 1. Show the count of total todo and the count of completed todo
