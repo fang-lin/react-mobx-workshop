@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 import { trim } from 'lodash';
-import { inject, observer } from 'mobx-react/index';
+import { inject, observer } from 'mobx-react';
 import { ENTER_KEY } from '../utils';
 
 const Input = styled.input`
