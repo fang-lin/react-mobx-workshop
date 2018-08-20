@@ -6,10 +6,13 @@ import './index.css';
 import TodoApp from './components/TodoApp';
 import Todos from './stores/Todos';
 
-const todos = new Todos();
+const store = new Todos();
+
+store.loadFromLocalStorage();
+store.subscribeToLocalStorage();
 
 ReactDOM.render(
-  <Provider { ...{ todos } }>
+  <Provider { ...{ store } }>
     <TodoApp/>
   </Provider>,
   document.getElementById('root')

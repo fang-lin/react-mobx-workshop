@@ -52,6 +52,7 @@ function enumerable(value) {
 
 ## What is MobX?
 
+![https://raw.githubusercontent.com/mobxjs/mobx/master/docs/flow.png](https://raw.githubusercontent.com/mobxjs/mobx/master/docs/flow.png)
 
 
 

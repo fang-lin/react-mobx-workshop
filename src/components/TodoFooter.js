@@ -11,12 +11,12 @@ const Footer = styled.footer`
   color: #333f48;
 `;
 
-@inject('todos')
+@inject('store')
 @observer
 
 class TodoFooter extends Component {
   render() {
-    const { completedCount, totalCount } = this.props.todos;
+    const { completedCount, totalCount } = this.props.store;
     return (
       <Footer className="todo-footer">
         <span>Total: { totalCount }</span> / <span>Completed: { completedCount }</span>

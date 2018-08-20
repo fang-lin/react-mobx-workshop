@@ -13,12 +13,12 @@ const TodoItems = styled.ul`
   border-radius: 4px;
 `;
 
-@inject('todos')
+@inject('store')
 @observer
 
 class TodosList extends Component {
   render() {
-    const { todos } = this.props.todos;
+    const { todos } = this.props.store;
     return (
       todos.length > 0 ? <TodoItems>
         { todos.map(todo => {

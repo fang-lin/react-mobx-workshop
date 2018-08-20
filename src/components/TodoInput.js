@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
-import { inject, observer } from 'mobx-react/index';
+import { inject, observer } from 'mobx-react';
+import { trim } from 'lodash';
 import { ENTER_KEY } from '../utils';
 
 const Input = styled.input`
@@ -20,14 +21,15 @@ const Input = styled.input`
   }
 `;
 
-@inject('todos')
+@inject('store')
 @observer
 
 class TodoInput extends Component {
 
   onKeyUp = event => {
-    if (event.keyCode === ENTER_KEY) {
-      this.props.todos.addTodo(event.target.value);
+    const title = trim(event.target.value);
+    if (event.keyCode === ENTER_KEY && title) {
+      this.props.store.addTodo(title);
       event.target.value = '';
     }
   };
