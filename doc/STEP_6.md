@@ -1,5 +1,7 @@
 # Step 5: Save to Local Storage
 
+    $ git co step-6
+
 ## Requirements
 
 1. Save and update todo data to Local Storage

@@ -1,5 +1,7 @@
 # Step 4: Editor and Is completed
 
+    $ git co step-4
+
 ## Requirements
 
 1. User can change the state of existing todo

@@ -1,5 +1,7 @@
 # Step 3: Refactor
 
+    $ git co step-3
+
 ## Requirements
 
 1. Do not change previous features

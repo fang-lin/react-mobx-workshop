@@ -1,5 +1,7 @@
 # Step 2: Remove a todo
 
+    $ git co step-2
+
 ## Requirements
 
 1. User can remove existing todo

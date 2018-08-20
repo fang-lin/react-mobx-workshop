@@ -25,10 +25,10 @@ export default class TodoStore {
   };
 
   toJS() {
-    return pick(toJS(this), ['id', 'title', 'completed']);
+
   }
 
   static fromJS({ title, id, completed }, store) {
-    return new this(title, id, completed, store);
+
   }
 }

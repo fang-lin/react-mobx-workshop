@@ -1,9 +1,6 @@
 # Step 1: Add a new todo
 
-
-## Get code
-
-    $ git co step-0
+    $ git co step-1
 
 ## Requirements
 

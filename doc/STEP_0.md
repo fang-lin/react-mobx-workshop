@@ -1,5 +1,7 @@
 # Step 0: Getting started
 
+    $ git co step-0
+
 ## What is decorator?
 
 - Simple class decorator

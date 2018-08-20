@@ -20,22 +20,18 @@ export default class Todos {
   };
 
   loadFromLocalStorage() {
-    const todosJSON = localStorage.getItem(STORAGE_NAME);
-    this.fromJS(JSON.parse(todosJSON));
+
   }
 
   subscribeToLocalStorage() {
-    reaction(
-      () => this.toJS(),
-      array => localStorage.setItem(STORAGE_NAME, JSON.stringify(array))
-    );
+
   }
 
   toJS() {
-    return this.todos.map(todo => todo.toJS());
+
   }
 
   fromJS(array) {
-    this.todos = array.map(item => Todo.fromJS(item, this));
+
   }
 }
