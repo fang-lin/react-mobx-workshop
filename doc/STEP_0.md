@@ -9,7 +9,8 @@
 class MyClass { }
 
 function annotation(target) {
-   target.annotated = true;
+    // target is MyClass
+    target.annotated = true;
 }
 ```
 
@@ -20,25 +21,31 @@ function annotation(target) {
 class MyClass { }
 
 function isTestable(value) {
-   return function decorator(target) {
-      target.isTestable = value;
-   }
+    // value is true
+    return function decorator(target) {
+        // target is MyClass
+        target.isTestable = value;
+    }
 }
 ```
 
 - Class function decorator
 
 ```javascript
-class C {
-  @enumerable(false)
-  method() { }
+class MyClass {
+    @enumerable(false)
+    method() { }
 }
 
 function enumerable(value) {
-  return function (target, key, descriptor) {
-     descriptor.enumerable = value;
-     return descriptor;
-  }
+    // value is false
+    return function (target, key, descriptor) {
+        // target is MyClass
+        // key is "method"
+        // descriptor is descriptor of method
+        descriptor.enumerable = value;
+        return descriptor;
+    }
 }
 ```
 
