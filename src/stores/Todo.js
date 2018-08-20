@@ -12,7 +12,6 @@ export default class TodoStore {
   }
 
   @action destroy = () => {
-    console.log(this.todosStore.todos, this.todosStore.todos.remove)
     this.todosStore.todos.remove(this);
   };
 
