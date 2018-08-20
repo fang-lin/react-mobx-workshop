@@ -59,7 +59,6 @@ const Title = styled.span`
 `;
 
 export default class TodoItem extends Component {
-
   render() {
     const { title } = this.props;
     return (

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
+import { inject, observer } from "mobx-react";
 import TodoItem from "./TodoItem";
 
 const TodoItems = styled.ul`
