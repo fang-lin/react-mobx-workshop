@@ -1,5 +1,10 @@
 # Step 1: Add a new todo
 
+
+## Get code
+
+    $ git co step-0
+
 ## Requirements
 
 1. User can input some words
