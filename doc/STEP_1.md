@@ -10,9 +10,8 @@
 ## Prompts
 
 1. Create a store `Todos`
-2. Use `@observable` and `@action` of "mobx"
-3. Use "mobx-react" `<Provider/>` to provide store to `App`,
-4. Use "mobx-react" `@inject` and `@observer`
+1. Use "mobx": `@observable` and `@action`
+1. Use "mobx-react": `@inject` and `@observer`
 
 
 ## Stores
