@@ -6,10 +6,8 @@ import './index.css';
 import TodoApp from './components/TodoApp';
 import Todos from './stores/Todos';
 
-const store = new Todos();
-
 ReactDOM.render(
-  <Provider { ...{ store } }>
+  <Provider>
     <TodoApp/>
   </Provider>,
   document.getElementById('root')
