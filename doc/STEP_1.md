@@ -12,15 +12,15 @@
 ## Prompts
 
 1. Create a store `Todos`
-1. Use "mobx": `@observable` and `@action`
-1. Use "mobx-react": `@inject` and `@observer`
+1. "mobx": `@observable` and `@action`
+1. "mobx-react": `Provider`, `@inject` and `@observer`
 
 
 ## References
 
 1. `@observable`: [https://mobx.js.org/refguide/observable-decorator.html](https://mobx.js.org/refguide/observable-decorator.html)
 1. `@action`: [https://mobx.js.org/refguide/action.html](https://mobx.js.org/refguide/action.html)
-1. `@inject` and `@observer`: [https://github.com/mobxjs/mobx-react](https://github.com/mobxjs/mobx-react)
+1. `Provider`, `@inject` and `@observer`: [https://github.com/mobxjs/mobx-react](https://github.com/mobxjs/mobx-react)
 
 
 ## Stores
