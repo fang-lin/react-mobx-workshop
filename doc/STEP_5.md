@@ -32,3 +32,5 @@
 │ addTodo()               │
 └─────────────────────────┘
 ```
+
+## [Next Step: Save to Local Storage](STEP_6.md)
